@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "https://release-checklist-tool-1.onrender.com/api" });
+// const API = axios.create({ baseURL: "http://localhost:5000/api" });
 
 export const getAllReleases = () => API.get("/releases");
 export const createRelease = (data) => API.post("/releases", data);
